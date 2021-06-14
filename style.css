@@ -5,23 +5,65 @@
 
     --garamond: 'EB Garamond';
 
-    --first: #b30000;
-    --stint: 'Stint Ultra Condensed';
+    --one: #b30000;
+    --one-stint: 'Stint Ultra Condensed';
 
-    --second: #990000;
-    --mate: 'Mate SC';
+    --two: #990000;
+    --two-mate: 'Mate SC';
 
-    --third: #800000;
-    --zilla: 'Zilla Slab';
+    --three: #800000;
+    --three-zilla: 'Zilla Slab';
 
-    --fourth: #660000;
-    --bodoni: 'Bodoni Moda';
+    --four: #660000;
+    --four-bodoni: 'Bodoni Moda';
 
-    --fifth: #4d0000;
-    --standard: 'Old Standard TT';
+    --five: #4d0000;
+    --five-standard: 'Old Standard TT';
 
-    --sixth: #660066;
-    --cormorant: 'Cormorant Garamond';
+    --six: #660066;
+    --six-cormorant: 'Cormorant Garamond';
+
+    --seven: #558000;
+    --seven-playfair: 'Playfair Display';
+
+    --eight: #99e600;
+    /* --standard */
+
+    --nine: #331a00;
+    --nine-quatrocento: 'Quattrocento';
+
+    --ten: #005c99;
+    --ten-lora: 'Lora';
+
+    --eleven: #0066cc;
+    --eleven-PT: 'PT Serif';
+
+    --twelve: #b3b3ff;
+    --twelve-noto: 'Noto Serif';
+
+    --thirteen: #1a1aff;
+    --thirteen-libre: 'Libre Baskerville';
+
+    --fourteen: #ffff80;
+    --fourteen-crimson: 'Crimson Text';
+
+    --fifteen: #e6e600;
+    --fiften-source: 'Source Serif Pro';
+
+    --sixteen: #b3b300;
+    /* --garamond */
+
+    --seventeen: #666600;
+    --seventeen-zilla: 'Zilla Slab';
+
+    --eighteen: #ff5500;
+    --eighteen-notoJP: 'Noto Serif JP';
+
+    --nineteen: #aaaa55;
+    --nineteen-benne: 'Benne';
+
+    --twenty: #f6f6ee;
+    --twenty-ibm: 'IBM Plex Serif';
 }
 
 
@@ -69,6 +111,7 @@ h1 {
     width: 80%;
     letter-spacing: 1px;
     font-weight: 400;
+    color: #f0f5f5;
 }
 
 
@@ -81,7 +124,7 @@ h1 {
     background: var(--background-main);
     border-radius: 5px;
     margin: 0 auto 4rem auto;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 
 .border {
@@ -127,47 +170,107 @@ h1 {
     box-shadow: 0px 0px 3px white;
 }
 
-.first {
-    background-color: var(--first);
-    font-family: var(--stint);
+.one {
+    background-color: var(--one);
+    font-family: var(--one-stint);
 }
 
-.second {
-    background-color: var(--second);
-    font-family: var(--mate);
+.two {
+    background-color: var(--two);
+    font-family: var(--two-mate);
 }
 
-.second .who {
-    width: 25%;
+.three {
+    background-color: var(--three);
+    font-family: var(--three-zilla);
 }
 
-.second .when {
-    width: 25%;
-    padding-right: 10%;
-}
-
-.second .how {
-    width: 50%;
-}
-
-.third {
-    background-color: var(--third);
-    font-family: var(--zilla);
-}
-
-.fourth {
+.four {
     background-color: var(--fourth);
     font-family: var(--bodoni);
 }
 
-.fifth {
-    background-color: var(--fifth);
-    font-family: var(--standard);
+.five {
+    background-color: var(--five);
+    font-family: var(--five-standard);
+    border-color: var(--five);
 }
 
-.sixth {
-    background-color: var(--sixth);
-    font-family: var(--cormorant);
+.six {
+    background-color: var(--six);
+    font-family: var(--six-cormorant);
+    box-shadow: 0px 0px 3px var(--six);
+}
+
+.seven {
+    background-color: var(--seven);
+    font-family: var(--seven-playfair);
+    box-shadow: 0px 0px 10px var(--seven);
+}
+
+.eight {
+    background-color: var(--eight);
+    font-family: var(--garamond);
+}
+
+.nine {
+    background-color: var(--nine);
+    font-family: var(--nine-quatrocento);
+}
+
+.ten {
+    background-color: var(--ten);
+    font-family: var(--ten-lora);
+}
+
+.eleven {
+    background-color: var(--eleven);
+    font-family: var(--eleven-PT);
+}
+
+.twelve {
+    background-color: var(--twelve);
+    font-family: var(--twelve-noto);
+}
+
+.thirteen {
+    background-color: var(--thirteen);
+    font-family: var(--thirteen-libre);
+}
+
+.fourteen {
+    background-color: var(--fourteen);
+    font-family: var(--fourteen-crimson);
+}
+
+.fifteen {
+    background-color: var(--fifteen);
+    font-family: var(--fiften-source);
+}
+
+.sixteen {
+    background-color: var(--sixteen);
+    font-family: var(--garamond);
+}
+
+.seventeen {
+    background-color: var(--seventeen);
+    font-family: var(--seventeen-zilla);
+}
+
+.eighteen {
+    background-color: var(--eighteen);
+    font-family: var(--eighteen-notoJP);
+}
+
+.nineteen {
+    background-color: var(--nineteen);
+    font-family: var(--nineteen-benne);
+}
+
+.twenty {
+    background-color: var(--twenty);
+    font-family: var(--twenty-ibm);
 }
 
 
