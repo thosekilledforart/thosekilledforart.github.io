@@ -2,11 +2,34 @@
     --background-main: black;
     --background-row: grey;
     --text: white;
+
+    --garamond: 'EB Garamond';
+
+    --first: #b30000;
+    --stint: 'Stint Ultra Condensed';
+
+    --second: #990000;
+    --mate: 'Mate SC';
+
+    --third: #800000;
+    --zilla: 'Zilla Slab';
+
+    --fourth: #660000;
+    --bodoni: 'Bodoni Moda';
+
+    --fifth: #4d0000;
+    --standard: 'Old Standard TT';
+
+    --sixth: #660066;
+    --cormorant: 'Cormorant Garamond';
 }
+
+
+/* general */
 
 html {
     font-size: 16px;
-    font-family: 'EB Garamond', sans-serif;
+    font-family: var(--garamond), sans-serif;
     color: var(--text);
 }
 
@@ -30,6 +53,9 @@ body {
     width: 100%;
 }
 
+
+/* heading */
+
 .heading {
     display: flex;
     justify-content: center;
@@ -45,6 +71,9 @@ h1 {
     font-weight: 400;
 }
 
+
+/* rows - general */
+
 .row {
     display: flex;
     width: 80%;
@@ -52,6 +81,7 @@ h1 {
     background: var(--background-main);
     border-radius: 5px;
     margin: 0 auto 4rem auto;
+    padding-right: 2rem;
 }
 
 .border {
@@ -62,10 +92,6 @@ h1 {
 
 .shadow-full {
     box-shadow: 0px 0px 3px white;
-}
-
-.shadow-sides {
-    box-shadow: 0px 5px black, 0px -5px black, 0px 0px 5px white;
 }
 
 .cell {
@@ -87,6 +113,65 @@ h1 {
 .how {
     width: 33.333%;
 }
+
+
+/* rows - examples */
+
+.border {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.shadow {
+    box-shadow: 0px 0px 3px white;
+}
+
+.first {
+    background-color: var(--first);
+    font-family: var(--stint);
+}
+
+.second {
+    background-color: var(--second);
+    font-family: var(--mate);
+}
+
+.second .who {
+    width: 25%;
+}
+
+.second .when {
+    width: 25%;
+    padding-right: 10%;
+}
+
+.second .how {
+    width: 50%;
+}
+
+.third {
+    background-color: var(--third);
+    font-family: var(--zilla);
+}
+
+.fourth {
+    background-color: var(--fourth);
+    font-family: var(--bodoni);
+}
+
+.fifth {
+    background-color: var(--fifth);
+    font-family: var(--standard);
+}
+
+.sixth {
+    background-color: var(--sixth);
+    font-family: var(--cormorant);
+}
+
+
+/* contact */
 
 .contact {
     display: flex;
