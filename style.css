@@ -1,69 +1,9 @@
 :root {
     --background-main: black;
     --background-row: grey;
-    --text: white;
+    --text: #f0f5f5;
 
     --garamond: 'EB Garamond';
-
-    --one: #b30000;
-    --one-stint: 'Stint Ultra Condensed';
-
-    --two: #990000;
-    --two-mate: 'Mate SC';
-
-    --three: #800000;
-    --three-zilla: 'Zilla Slab';
-
-    --four: #660000;
-    --four-bodoni: 'Bodoni Moda';
-
-    --five: #4d0000;
-    --five-standard: 'Old Standard TT';
-
-    --six: #660066;
-    --six-cormorant: 'Cormorant Garamond';
-
-    --seven: #558000;
-    --seven-playfair: 'Playfair Display';
-
-    --eight: #99e600;
-    /* --standard */
-
-    --nine: #331a00;
-    --nine-quatrocento: 'Quattrocento';
-
-    --ten: #005c99;
-    --ten-lora: 'Lora';
-
-    --eleven: #0066cc;
-    --eleven-PT: 'PT Serif';
-
-    --twelve: #b3b3ff;
-    --twelve-noto: 'Noto Serif';
-
-    --thirteen: #1a1aff;
-    --thirteen-libre: 'Libre Baskerville';
-
-    --fourteen: #ffff80;
-    --fourteen-crimson: 'Crimson Text';
-
-    --fifteen: #e6e600;
-    --fiften-source: 'Source Serif Pro';
-
-    --sixteen: #b3b300;
-    /* --garamond */
-
-    --seventeen: #666600;
-    --seventeen-zilla: 'Zilla Slab';
-
-    --eighteen: #ff5500;
-    --eighteen-notoJP: 'Noto Serif JP';
-
-    --nineteen: #aaaa55;
-    --nineteen-benne: 'Benne';
-
-    --twenty: #f6f6ee;
-    --twenty-ibm: 'IBM Plex Serif';
 }
 
 
@@ -93,6 +33,8 @@ body {
 
 .container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -111,20 +53,28 @@ h1 {
     width: 80%;
     letter-spacing: 1px;
     font-weight: 400;
-    color: #f0f5f5;
+    color: var(--text);
 }
 
 
 /* rows - general */
 
-.row {
+
+
+.table {
     display: flex;
-    width: 80%;
-    height: 10rem;
-    background: var(--background-main);
-    border-radius: 5px;
-    margin: 0 auto 4rem auto;
-    padding-right: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.row {
+    box-sizing: border-box;
+    width: 33.3333%;
+    min-width: 300px;
+    height: 15rem;
+    padding: 1rem;
+    background-color: var(--background-row);
 }
 
 .border {
@@ -138,23 +88,28 @@ h1 {
 }
 
 .cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    text-align: center;
     font-size: 1.5rem;
 }
 
 .who {
-    width: 33.333%;
+    height: 25%;
 }
 
 .when {
-    width: 33.333%;
+    height: 25%;
 }
 
 .how {
-    width: 33.333%;
+    height: 50%;
+}
+
+
+/* form */
+
+.form {
+    display: flex;
+    justify-content: center;
 }
 
 
