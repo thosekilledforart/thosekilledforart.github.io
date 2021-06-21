@@ -1,9 +1,9 @@
 :root {
     --background-main: black;
-    --background-row: grey;
+    --background-row: url("kamien.png");
     --text: #f0f5f5;
 
-    --garamond: 'EB Garamond';
+    --font: 'EB Garamond';
 }
 
 
@@ -11,20 +11,8 @@
 
 html {
     font-size: 16px;
-    font-family: var(--garamond), sans-serif;
+    font-family: var(--font), sans-serif;
     color: var(--text);
-}
-
-@media (max-width: 900px) {
-    html {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 400px) {
-    html {
-        font-size: 13px;
-    }
 }
 
 body {
@@ -50,7 +38,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    width: 80%;
+    width: 75%;
     letter-spacing: 1px;
     font-weight: 400;
     color: var(--text);
@@ -60,21 +48,20 @@ h1 {
 /* rows - general */
 
 
-
 .table {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
-    width: 70%;
+    width: 900px;
 }
 
 .row {
     box-sizing: border-box;
-    width: 33.3333%;
-    min-width: 300px;
-    height: 15rem;
+    width: 300px;
+    height: 250px;
     padding: 1rem;
-    background-color: var(--background-row);
+    padding-top: 1.5rem;
+    background-image: var(--background-row);
 }
 
 .border {
@@ -107,139 +94,92 @@ h1 {
 
 /* form */
 
-.form {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* rows - examples */
-
-.border {
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.shadow {
-    box-shadow: 0px 0px 3px white;
-}
-
-.one {
-    background-color: var(--one);
-    font-family: var(--one-stint);
-}
-
-.two {
-    background-color: var(--two);
-    font-family: var(--two-mate);
-}
-
-.three {
-    background-color: var(--three);
-    font-family: var(--three-zilla);
-}
-
-.four {
-    background-color: var(--fourth);
-    font-family: var(--bodoni);
-}
-
-.five {
-    background-color: var(--five);
-    font-family: var(--five-standard);
-    border-color: var(--five);
-}
-
-.six {
-    background-color: var(--six);
-    font-family: var(--six-cormorant);
-    box-shadow: 0px 0px 3px var(--six);
-}
-
-.seven {
-    background-color: var(--seven);
-    font-family: var(--seven-playfair);
-    box-shadow: 0px 0px 10px var(--seven);
-}
-
-.eight {
-    background-color: var(--eight);
-    font-family: var(--garamond);
-}
-
-.nine {
-    background-color: var(--nine);
-    font-family: var(--nine-quatrocento);
-}
-
-.ten {
-    background-color: var(--ten);
-    font-family: var(--ten-lora);
-}
-
-.eleven {
-    background-color: var(--eleven);
-    font-family: var(--eleven-PT);
-}
-
-.twelve {
-    background-color: var(--twelve);
-    font-family: var(--twelve-noto);
-}
-
-.thirteen {
-    background-color: var(--thirteen);
-    font-family: var(--thirteen-libre);
-}
-
-.fourteen {
-    background-color: var(--fourteen);
-    font-family: var(--fourteen-crimson);
-}
-
-.fifteen {
-    background-color: var(--fifteen);
-    font-family: var(--fiften-source);
-}
-
-.sixteen {
-    background-color: var(--sixteen);
-    font-family: var(--garamond);
-}
-
-.seventeen {
-    background-color: var(--seventeen);
-    font-family: var(--seventeen-zilla);
-}
-
-.eighteen {
-    background-color: var(--eighteen);
-    font-family: var(--eighteen-notoJP);
-}
-
-.nineteen {
-    background-color: var(--nineteen);
-    font-family: var(--nineteen-benne);
-}
-
-.twenty {
-    background-color: var(--twenty);
-    font-family: var(--twenty-ibm);
-}
-
-
-/* contact */
-
 .contact {
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
-    height: 12rem;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
     margin-top: 10rem;
-    text-align: center;
+    width: 80%;
+    padding-bottom: 7rem;
 }
 
 .info {
-    width: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-family: var(--font);
+}
+
+.submit {
+    text-align: center;
+    margin-top: 15px;
+}
+
+input[type=submit] {    
+    width: 20%;
+    min-width: 80px;
+}
+
+
+@media (max-width: 1200px) {
+    .table {
+        width: 600px;
+    }
+}
+
+@media (max-width: 800px) {
+    .table {
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        width: 90%;
+    }
+
+    .table {
+        width: 250px;
+    }
+
+    .row {
+        width: 250px;
+        height: 208px;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        background-image: var(--background-row);
+    }
+
+    .form {
+        width: 80%;
+    }
 }
