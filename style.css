@@ -1,7 +1,8 @@
 :root {
     --background-main: black;
     --background-row: url("kamien.png");
-    --text: #f0f5f5;
+    --title: #f0f5f5;
+    --text: #cccccc;
 
     --font: 'EB Garamond';
 }
@@ -41,7 +42,7 @@ h1 {
     width: 75%;
     letter-spacing: 1px;
     font-weight: 400;
-    color: var(--text);
+    color: var(--title);
 }
 
 
