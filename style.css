@@ -61,7 +61,6 @@ h1 {
     width: 300px;
     height: 250px;
     padding: 1rem;
-    padding-top: 1.5rem;
     background-image: var(--background-row);
 }
 
@@ -76,6 +75,9 @@ h1 {
 }
 
 .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -85,11 +87,11 @@ h1 {
 }
 
 .when {
-    height: 25%;
+    height: 35%;
 }
 
 .how {
-    height: 50%;
+    height: 40%;
 }
 
 
